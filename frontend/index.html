@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stock Market Prediction</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Market Prediction using CNN and API</h1>
+        <form id="prediction-form">
+            <label>Enter Stock Name:</label>
+            <input type="text" id="stock-name" name="stock-name" placeholder="e.g. AAPL" required />
+            <button type="submit">Predict</button>
+        </form>
+        <div id="result"></div>
+        <div class="charts-container">
+            <div>
+                <h2>CNN Model Prediction</h2>
+                <canvas id="cnn-chart" width="400" height="200"></canvas>
+            </div>
+            <div>
+                <h2>Prediction</h2>
+                <canvas id="api-chart" width="400" height="200"></canvas>
+                <div id="prediction-text"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
